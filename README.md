@@ -10,15 +10,11 @@ Repositório público: https://github.com/murilosilvadacosta5ano-dotcom/claude-a
 
 ## Como usar
 
-- Clique nos **3 tracinhos** (☰) no canto superior esquerdo → abre a barra lateral
+- Clique nos **3 tracinhos** no canto superior esquerdo → abre a barra lateral
 - Clique em **MS** (iniciais) no rodapé da barra → abre Configurações
 - Clique em **+ Novo bate-papo** → volta para o início
 
-## Abrir sem instalar (HTML único)
-
-Abra o arquivo [`site-claude.html`](./site-claude.html) no navegador. Tem as 3 telas e os cliques do menu / MS.
-
-## Rodar o app React
+## Rodar
 
 ```bash
 git clone https://github.com/murilosilvadacosta5ano-dotcom/claude-app.git
@@ -43,6 +39,5 @@ Abre em `http://localhost:8080`.
 | Conversas / Projetos / Código / Artefatos | `src/components/views.tsx` |
 | Estado (menu aberto, MS, conversas) | `src/lib/store.ts` |
 | Estilos | `src/styles.css` |
-| HTML único (3 telas) | `site-claude.html` |
 
 Conta de exemplo: **Muri** (`murilosilva.dacosta12@gmail.com`).
