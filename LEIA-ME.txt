@@ -1,0 +1,46 @@
+CLAUDE — código do site (3 partes da foto)
+==========================================
+
+Este pacote tem o código das 3 telas:
+
+  1) INÍCIO     — “Boa tarde, Muri”, estrela, Chat com Claude
+  2) MENU       — os 3 tracinhos abrem a barra (Conversas, Projetos, Código, Artefatos, MS, Novo bate-papo)
+  3) AJUSTES    — o botão MS abre Configurações (e-mail, upgrade, Conta, App)
+
+Como as telas se ligam
+----------------------
+  • Clique nos 3 tracinhos (☰)  →  abre a barra do canto (sidebar.tsx)
+  • Clique em MS                →  abre Configurações (settings.tsx)
+  • Clique em + Novo bate-papo  →  volta pro início pra conversar
+
+
+ARQUIVOS DE CADA PARTE
+----------------------
+
+PARTE 1 — Tela inicial
+  src/components/home-view.tsx     cabeçalho ☰ + fantasma, saudação, compositor
+  src/components/composer.tsx      “Chat com Claude”, Sonnet 5 Médio, +, mic, voz
+  src/components/claude-mark.tsx   estrela terracota e ícones (menu, fantasma, etc.)
+
+PARTE 2 — Barra do canto (3 tracinhos)
+  src/components/sidebar.tsx       menu Claude, Conversas/Projetos/Código/Artefatos, MS, Novo bate-papo
+
+PARTE 3 — Configurações (botão MS)
+  src/components/settings.tsx      e-mail, Obter mais Claude, Conta, App e subpáginas
+
+O RESTO DO SITE
+  src/components/claude-app.tsx    junta as 3 partes e o chat
+  src/components/chat-view.tsx     conversa depois que você manda mensagem
+  src/components/views.tsx         Conversas, Projetos, Código, Artefatos
+  src/components/sheets.tsx        upgrade, modelo, anexo, voz, info
+  src/components/markdown.tsx      formatação das respostas
+  src/lib/store.ts                 estado (menu aberto, MS, conversas)
+  src/lib/types.ts                 usuário Muri / e-mail / modelos
+  src/lib/utils.ts                 “Boa tarde”, datas
+  src/lib/ask.ts                   envio das mensagens
+  src/styles.css                   cores, fontes, cartões
+  src/routes/index.tsx             rota principal
+  src/routes/__root.tsx            HTML da página
+
+Pasta src/components = as telas
+Pasta src/lib        = dados e lógica
